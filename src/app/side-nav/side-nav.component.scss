@@ -1,0 +1,58 @@
+
+.side-nav-content{
+    color: white;
+    // overall width was 250 px of the whole side-nav so now 230
+    width : 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.nav-list{
+    // dot removed
+    list-style: none;
+    height: 100%;
+    padding:0%;
+    margin-bottom: 0%;
+}
+.nav-button {
+   display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .nav-button i {
+    color: aqua;
+    //  background-color: white;
+    font-size: 20px;
+    // background-color: rgb(16, 16, 16);
+    text-emphasis-color: white;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  /* Apply the hover effect to the buttons */
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+  
+  .nav-button span {
+    width: 150px;
+    text-transform: capitalize;
+  }
+// underline anchor ki wajah se remove it
+a{
+    text-decoration: none;
+    color: white;
+}

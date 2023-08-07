@@ -1,0 +1,43 @@
+
+<!-- bootstrap container fliud default margin--> 
+<div class ="container-fluid g-0">
+  <app-header (sideNavToggled) = " sideNavStatus = $event;" ></app-header>
+ 
+  <main class ="main-content">
+    <div class="scrollable-content">
+   
+    <app-side-nav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-side-nav-open': sideNavStatus}"></app-side-nav>
+    <div class = "display-area p-3 " [ngClass]="{'display-area-shrink': sideNavStatus}">
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8"> <!-- Adjust the column size as needed -->
+        <app-carousel><p class = "fs-1 fw-bold fst-italic">Welcome to Paisaway</p></app-carousel>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <hr>
+        <p class="rating-div fw-bold justify-content-center">We at Paisaway proide you ultimate money related solutions and advice. </p>
+        <div class = "rating-div row justify-content-center mt-4">
+          <ngb-rating [(rate)]="currentRate"></ngb-rating>
+<hr>
+<pre>Rate us: <b>{{currentRate}}</b></pre>
+<hr>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8"> <!-- Adjust the column size as needed -->
+        <app-home></app-home>
+      </div>
+    </div>
+    <div><div class="container text-center">
+      <hr>
+      <p> 2023 Paisaway. All rights reserved.</p>
+      <p>Contact Us: contact@paisaway.com</p>
+      <hr>
+    </div></div>
+</div>
+  </main>
+</div>

@@ -1,0 +1,66 @@
+.carousel-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+app-header{
+    position: fixed;
+    // pos if scroll then remain fixed
+    width: 100%;
+    // to fill whol page
+    top: 0px;
+    height: 4rem;
+    z-index: 2;
+}
+// earlier the side nav was hidden under the heeader when just made
+main{
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    // header heght was also 4rem
+    z-index: 1;
+    border-top: 2px solid white;
+}
+app-side-nav{
+    position: fixed;
+    left: 0rem;
+    width: 0px;
+    height: calc(100vh - 4rem);
+    // box-shadow: 0px 0px 10px rgb(0,0,0,0.5);
+    background-color: rgba(34, 34, 34, 1);
+    // border-top: 1px solid white;
+    overflow-x :hidden;
+    // white-space: nowrap;
+    transition: width 250ms ease-in;
+}
+.display-area{
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+    // minus the nav side width
+    transition: left 250ms ease-in,width 250ms ease-in;
+}
+.display-area-shrink{
+    width: calc(100% - 250px);
+    left: 250px;
+}
+.app-side-nav-open{
+    width: 185px;
+}
+.content-wrapper {
+    padding-bottom: 10px; 
+  }
+  .rating-div {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(56, 58, 32, 0.3);
+  }
+  .scrollable-content {
+    // margin-left: 200px; 
+    // padding-top: 60px;  
+    // padding-right: 1px;   
+    overflow-y: auto;
+  }

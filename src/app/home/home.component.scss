@@ -1,0 +1,11 @@
+.box{
+    overflow:hidden;
+  }
+  .box.image{
+    object-fit: cover;
+    transition:all ease 0.5s;
+  }
+  .box:hover{
+  scale : 1.2;
+  
+  }
